@@ -1,9 +1,9 @@
 # <img src="app/src/main/ic_launcher-playstore.png" width="60px"> LEINs
 
 ## 概要
-**「あなたのAndroid端末を、あなたの使い方に合わせて」**
+**「LINEをあなたの使い方に合わせて」**
 
-LEINs は、Android端末上のアプリ体験を向上させるための  
+LEINs は、LINE アプリ体験を向上させるための  
 ユーザー向けカスタマイズツールです。
 
 表示の調整、通知の最適化、ローカルデータの管理など、  
