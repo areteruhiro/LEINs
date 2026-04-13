@@ -26,7 +26,7 @@ areteruhiro@gmail.com
 ---
 
 ## 🔗 コミュニティ / 最新情報
-- Telegram: https://t.me/LsPosedLEINs  
+- Telegram: https://t.me/+LacdVUvvKJdjZmY1  
 - Discord: https://discord.gg/5WWxUkMsNJ  
 
 ---
