@@ -1,4 +1,4 @@
-# <img src="app/src/main/ic_launcher-playstore.png" width="60px"> LEINs
+#  LEINs
 
 ## 概要
 **「LINEをあなたの使い方に合わせて」**
