@@ -31,7 +31,7 @@ areteruhiro@gmail.com
 
 ---
 
-## 🚀 導入方法
+## 🚀 導入方法 （編集中）
 - [ROOT版の導入方法](https://github.com/areteruhiro/LEINs/blob/master/README%20for%20root.md)  
 - [LsPatch版の導入方法](https://github.com/areteruhiro/LEINs/blob/master/README%20for%20LsPatch.md)  
 
@@ -42,18 +42,12 @@ areteruhiro@gmail.com
 - **ローカルデータのバックアップ / リストア** — 端末内データの自己管理支援  
 
 
-詳細はこちら：  
+詳細はこちら：  （編集中）
 https://github.com/areteruhiro/LEINs/blob/master/FunctionLIST.md  
 
 ---
 
-## ⚠️ 確認済みの不具合
-- 設定が保存されない場合があります  
-  https://t.me/LsPosedLEINs/2425/2450  
-
----
-
-## 💾 バックアップ / リストア
+## 💾 バックアップ / リストア（編集中）
 LEINs は、端末内のローカルデータを安全に管理するための機能を提供します。
 
 手順：
