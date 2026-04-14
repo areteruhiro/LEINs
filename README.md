@@ -66,8 +66,8 @@ https://github.com/areteruhiro/LEINs/blob/master/FunctionLIST.md
 
 ##  リスペクト
 私が、Xposedモジュール作成を志したのは以下の方のおかげです。
-https://github.com/Chipppppppppp  
-https://github.com/s1204IT  
+- https://github.com/Chipppppppppp  
+- https://github.com/s1204IT  
 
 ---
 
