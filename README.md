@@ -77,7 +77,7 @@ https://github.com/areteruhiro/LEINs/blob/master/FunctionLIST.md
 ---
 
 ## 📄 ライセンス
-本ソフトウェアは個人利用、学習目的として公開されています。  
+本ソフトウェアは学習目的として公開されています。  
 
 ---
 
