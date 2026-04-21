@@ -47,7 +47,7 @@ areteruhiro@gmail.com
 
 
 詳細はこちら： 
-https://github.com/areteruhiro/LEINs/blob/master/FunctionLIST.md  
+https://github.com/areteruhiro/LEINs/blob/main/FunctionLIST.md  
 
 
 ---
