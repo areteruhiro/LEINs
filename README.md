@@ -40,7 +40,7 @@ areteruhiro@gmail.com
 - **通知・表示の最適化**
 - **ローカルデータのバックアップ / リストア**
 - **既読者の確認**
-
+など、100個以上のオプションがあります！
 
 詳細はこちら： 
 https://github.com/areteruhiro/LEINs/blob/main/FunctionLIST.md  
