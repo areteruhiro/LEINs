@@ -1,5 +1,11 @@
 
 
+## 1.0.2
+
+build.gradle の更新
+
+
+
 ## 1.0.1
 
 - MainActivityの修正
