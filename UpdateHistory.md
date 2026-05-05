@@ -1,5 +1,11 @@
 
 
+## 1.1.1
+
+Fix FontChange bug
+
+
+
 ## 1.1.0
 
 ダウングレードVersion保存
