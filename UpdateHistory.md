@@ -7,6 +7,13 @@
 
 
 
+## 4.1
+
+- オプション修正
+- 既読表示の修正
+
+
+
 ## 5.2
 
 - preventUnsendMessage_Context_Menu　の動作のバグを修正
