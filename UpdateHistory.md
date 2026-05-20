@@ -1,5 +1,12 @@
 
 
+## 5.4
+
+設定状態の読み込みの改善による起動時間の改善
+その他設定関連のバグの修正
+
+
+
 ## 5.3.9.test
 
 Merge pull request #53 from areteruhiro/codex/add-shared_prefs-settings-file-support-fhv942
