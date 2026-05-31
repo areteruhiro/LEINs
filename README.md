@@ -45,6 +45,13 @@ areteruhiro@gmail.com
 詳細はこちら： 
 https://github.com/areteruhiro/LEINs/blob/main/FunctionLIST.md  
 
+## 📚 ユーザー向けWiki
+設定項目の説明、Trial版 / Basic版 / Unlock版の違い、カテゴリ別の機能一覧は以下にまとめています。
+
+- [LEINs ユーザー向けWiki 日本語版](docs/LEINs_User_Wiki_ja/README.md)
+- [版とプラン比較](docs/LEINs_User_Wiki_ja/editions.md)
+- [設定画面の使い方](docs/LEINs_User_Wiki_ja/settings-ui.md)
+
 
 ---
 
