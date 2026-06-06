@@ -1,0 +1,101 @@
+name: Delete old releases
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_version:
+        description: 'Delete releases with tag version <= this value'
+        required: true
+        default: 'v5.5'
+      cleanup_tags:
+        description: 'Also delete the matching git tags'
+        required: true
+        type: boolean
+        default: true
+      dry_run:
+        description: 'Only print targets without deleting'
+        required: true
+        type: boolean
+        default: false
+  schedule:
+    # Runs every day at 03:00 JST
+    - cron: '0 18 * * *'
+  release:
+    types: [published, prereleased, edited]
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  delete-old-releases:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete releases at or below max version
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          MAX_VERSION: ${{ inputs.max_version || 'v5.5' }}
+          CLEANUP_TAGS: ${{ inputs.cleanup_tags || 'true' }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: |
+          set -euo pipefail
+
+          max="${MAX_VERSION#v}"
+          max="${max%%-*}"
+
+          echo "Repository: ${REPO}"
+          echo "Delete releases with version <= ${max}"
+          echo "Cleanup tags: ${CLEANUP_TAGS}"
+          echo "Dry run: ${DRY_RUN}"
+          echo
+
+          mapfile -t tags < <(gh release list -R "${REPO}" --limit 1000 --json tagName --jq '.[].tagName')
+
+          if [ "${#tags[@]}" -eq 0 ]; then
+            echo "No releases found."
+            exit 0
+          fi
+
+          deleted=0
+          skipped=0
+
+          for tag in "${tags[@]}"; do
+            version="${tag#v}"
+            version="${version%%-*}"
+
+            if ! [[ "${version}" =~ ^[0-9]+([.][0-9]+)*$ ]]; then
+              echo "Skip non-version tag: ${tag}"
+              skipped=$((skipped + 1))
+              continue
+            fi
+
+            lower_or_equal="$(printf '%s\n%s\n' "${version}" "${max}" | sort -V | head -n1)"
+
+            if [ "${lower_or_equal}" = "${version}" ]; then
+              echo "Target: ${tag}"
+
+              if [ "${DRY_RUN}" = "true" ]; then
+                echo "DRY_RUN=true, not deleting ${tag}"
+              elif [ "${CLEANUP_TAGS}" = "true" ]; then
+                gh release delete "${tag}" -R "${REPO}" --cleanup-tag -y
+              else
+                gh release delete "${tag}" -R "${REPO}" -y
+              fi
+
+              deleted=$((deleted + 1))
+            else
+              echo "Keep: ${tag}"
+              skipped=$((skipped + 1))
+            fi
+          done
+
+          echo
+          if [ "${DRY_RUN}" = "true" ]; then
+            echo "Dry run completed. Targets found: ${deleted}. Skipped: ${skipped}."
+          else
+            echo "Cleanup completed. Deleted targets: ${deleted}. Skipped: ${skipped}."
+          fi
