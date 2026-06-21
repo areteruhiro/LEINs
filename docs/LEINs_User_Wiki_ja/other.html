@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LEINsの上級者向けに関する日本語ガイドです。">
+  <meta name="theme-color" content="#06c755">
+  <title>上級者向け | LEINs Guide</title>
+  <link rel="icon" href="../assets/leins-icon.png">
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+  <header class="wiki-header">
+    <nav class="wiki-nav" aria-label="Wikiナビゲーション">
+      <a class="wiki-brand" href="../index.html"><img src="../assets/leins-icon.png" alt="" width="34" height="34"><span>LEINs Guide</span></a>
+      <div class="wiki-links">
+        <a href="getting-started.html">はじめ方</a>
+        <a href="settings-ui.html">設定画面</a>
+        <a href="editions.html">プラン</a>
+        <a href="glossary.html">用語集</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wiki-main">
+    <article class="wiki-article"><h1>上級者向け</h1>
+<p><a href="../index.html">ホームへ戻る</a> / <a href="settings-ui.html">設定画面の使い方</a></p>
+<p>セキュリティ、LSPatch、設定保存、ログ、開発者向け機能をまとめています。</p>
+<blockquote>
+<p>2026年6月21日時点の <code>LEINsOptions.java</code>、日本語リソース、<code>hooks</code> 実装を照合しています。表示項目はAPK・プラン・LINEバージョンで変わる場合があります。</p>
+</blockquote>
+<h2>現在の設定項目（14件）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>表示名</th>
+<th>説明</th>
+<th align="center">初期</th>
+<th>利用範囲</th>
+<th>設定キー</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>⚠ E2EE暗号化を無効化</td>
+<td>⚠ 危険: エンドツーエンド暗号化を無効化します。自分だけでなく、相手側の暗号化も解除される可能性があります。リスクを完全に理解した上でのみ使用してください。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>E2EE_Disable</code></td>
+</tr>
+<tr>
+<td>サブ端末をメイン端末に偽装</td>
+<td>LINEのショップ用サブ端末判定をfalseに固定し、サブ端末をメイン端末に偽装します。</td>
+<td align="center">OFF</td>
+<td>Unlock</td>
+<td><code>FiASubDeviceGateFalse</code></td>
+</tr>
+<tr>
+<td>フォアグラウンド通知の発行</td>
+<td>LINEをフォアグラウンドサービスとして常時起動し、LINEを開いていなくても通知が届くようにします。バッテリー消費が増える場合があります。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>SystemForegroundService</code></td>
+</tr>
+<tr>
+<td>LEINsの更新を自動確認</td>
+<td>LEINsのGitHubページを自動確認し、新しいバージョンがあれば通知します。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>AutoUpDateCheck</code></td>
+</tr>
+<tr>
+<td>&quot;(AntiApk)設定項目トークボタンを開く &quot;</td>
+<td></td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>SettingClick</code></td>
+</tr>
+<tr>
+<td>LINE設定項目フィルター</td>
+<td>LINEのメイン設定に表示する項目を選択できます。新しく検出された項目は自動で追加されます。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>Setting_Filter</code></td>
+</tr>
+<tr>
+<td>SharedPreferences設定モード</td>
+<td>起動時にSAF同期ではなくアプリ内のSharedPreferencesキャッシュからLEINs設定を読み込みます。オフの場合は従来のSAF設定を使用します。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>SharedPreferencesSettingsMode</code></td>
+</tr>
+<tr>
+<td>FCMトークンを取得</td>
+<td>LINEのログイントークンをログに記録します。外部ツールと連携する上級者向けの機能です。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>TokenGet</code></td>
+</tr>
+<tr>
+<td>SHA-1 HEXログ出力</td>
+<td>FCMトークンを取得が上手に出来ない場合に有効にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>HexOutput</code></td>
+</tr>
+<tr>
+<td>生体情報連携を許可をLSpach/NPachでも可能に</td>
+<td></td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>Biometric_information</code></td>
+</tr>
+<tr>
+<td>Sonyランチャーのバッジ数を修正</td>
+<td>Sonyのホームランチャーで未読バッジ数が表示されない問題を修正します。Sonyデバイス以外では不要です。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>SonyLauncherCount</code></td>
+</tr>
+<tr>
+<td>年齢確認をスキップ</td>
+<td>現在この機能は機能していません</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>AgeCheckSkip</code></td>
+</tr>
+<tr>
+<td>通信内容をログに出力 (開発者用)</td>
+<td>LINEが送受信するすべての通信内容をログに記録します。デバッグ・開発用途向けです。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>output_communication</code></td>
+</tr>
+<tr>
+<td>スタンプのお試しを有効化</td>
+<td>解除ライセンス向けのスタンプ試用補助機能です。ライセンス認証後に有効化してください。</td>
+<td align="center">OFF</td>
+<td>Unlock</td>
+<td><code>Stamp_Trial</code></td>
+</tr>
+</tbody></table></div>
+<h2>LINE内の詳細設定</h2>
+<p>スイッチとは別に、機能が有効なときだけ表示される設定ボタンがあります。</p>
+<ul>
+<li>LINE設定項目フィルター</li>
+<li>設定保存先・ライセンス・トークン</li>
+<li>通信リクエスト/レスポンス改変</li>
+<li>更新履歴・寄付者一覧</li>
+</ul>
+<h2>変更後の確認</h2>
+<ol>
+<li>設定を変更します。</li>
+<li>再起動確認が表示された場合はLINEを再起動します。</li>
+<li>対象画面で動作を確認します。問題があれば直前の設定をOFFに戻します。</li>
+</ol>
+</article>
+  </main>
+  <footer class="wiki-footer">LEINs Japanese User Guide</footer>
+</body>
+</html>

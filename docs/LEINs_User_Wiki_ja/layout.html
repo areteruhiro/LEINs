@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LEINsのレイアウト・UIに関する日本語ガイドです。">
+  <meta name="theme-color" content="#06c755">
+  <title>レイアウト・UI | LEINs Guide</title>
+  <link rel="icon" href="../assets/leins-icon.png">
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+  <header class="wiki-header">
+    <nav class="wiki-nav" aria-label="Wikiナビゲーション">
+      <a class="wiki-brand" href="../index.html"><img src="../assets/leins-icon.png" alt="" width="34" height="34"><span>LEINs Guide</span></a>
+      <div class="wiki-links">
+        <a href="getting-started.html">はじめ方</a>
+        <a href="settings-ui.html">設定画面</a>
+        <a href="editions.html">プラン</a>
+        <a href="glossary.html">用語集</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wiki-main">
+    <article class="wiki-article"><h1>レイアウト・UI</h1>
+<p><a href="../index.html">ホームへ戻る</a> / <a href="settings-ui.html">設定画面の使い方</a></p>
+<p>ボトムバーの表示、アイコン配置、タップ範囲を調整します。</p>
+<blockquote>
+<p>2026年6月21日時点の <code>LEINsOptions.java</code>、日本語リソース、<code>hooks</code> 実装を照合しています。表示項目はAPK・プラン・LINEバージョンで変わる場合があります。</p>
+</blockquote>
+<h2>現在の設定項目（7件）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>表示名</th>
+<th>説明</th>
+<th align="center">初期</th>
+<th>利用範囲</th>
+<th>設定キー</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>VOOM アイコンを削除</td>
+<td>ボトムバーからVOOMタブを取り除きます。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>remove_voom</code></td>
+</tr>
+<tr>
+<td>ミニアプリアイコンを削除</td>
+<td>ボトムバーからミニアプリタブを取り除きます。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>remove_wallet</code></td>
+</tr>
+<tr>
+<td>ミニアプリ画面の項目を非表示</td>
+<td>ミニアプリ画面を中心としたレイアウト要素を検出し非表示にできます。先にミニアプリを開いて項目を読み込んでから設定してください。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>WalleteRemoveLayout</code></td>
+</tr>
+<tr>
+<td>ニュース・通話履歴アイコンを非表示</td>
+<td>ボトムバーからニュース・通話履歴タブを取り除きます。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>remove_news_or_call</code></td>
+</tr>
+<tr>
+<td>ボトムバーのアイコンを均等配置</td>
+<td>タブを削除した後、残ったアイコンを均等に並べ直します。削除系の設定と組み合わせて使うと効果的です。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>distribute_evenly</code></td>
+</tr>
+<tr>
+<td>ボトムバーのアイコンのタップ範囲を拡大</td>
+<td>ボトムバーのアイコンを押しやすくするため、タップできる範囲を広げます。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>extend_clickable_area</code></td>
+</tr>
+<tr>
+<td>ボトムバーのラベルを非表示</td>
+<td>ボトムバーのアイコン下に表示される「トーク」「ニュース」などのテキストを非表示にします。すっきりした見た目になります。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>remove_icon_labels</code></td>
+</tr>
+</tbody></table></div>
+<h2>LINE内の詳細設定</h2>
+<p>スイッチとは別に、機能が有効なときだけ表示される設定ボタンがあります。</p>
+<ul>
+<li>ミニアプリの項目非表示設定</li>
+</ul>
+<h2>変更後の確認</h2>
+<ol>
+<li>設定を変更します。</li>
+<li>再起動確認が表示された場合はLINEを再起動します。</li>
+<li>対象画面で動作を確認します。問題があれば直前の設定をOFFに戻します。</li>
+</ol>
+</article>
+  </main>
+  <footer class="wiki-footer">LEINs Japanese User Guide</footer>
+</body>
+</html>

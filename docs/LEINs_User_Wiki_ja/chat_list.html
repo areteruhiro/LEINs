@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LEINsのチャットリストに関する日本語ガイドです。">
+  <meta name="theme-color" content="#06c755">
+  <title>チャットリスト | LEINs Guide</title>
+  <link rel="icon" href="../assets/leins-icon.png">
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+  <header class="wiki-header">
+    <nav class="wiki-nav" aria-label="Wikiナビゲーション">
+      <a class="wiki-brand" href="../index.html"><img src="../assets/leins-icon.png" alt="" width="34" height="34"><span>LEINs Guide</span></a>
+      <div class="wiki-links">
+        <a href="getting-started.html">はじめ方</a>
+        <a href="settings-ui.html">設定画面</a>
+        <a href="editions.html">プラン</a>
+        <a href="glossary.html">用語集</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wiki-main">
+    <article class="wiki-article"><h1>チャットリスト</h1>
+<p><a href="../index.html">ホームへ戻る</a> / <a href="settings-ui.html">設定画面の使い方</a></p>
+<p>トーク一覧上部の検索・ショートカット・作成ボタンを整理します。</p>
+<blockquote>
+<p>2026年6月21日時点の <code>LEINsOptions.java</code>、日本語リソース、<code>hooks</code> 実装を照合しています。表示項目はAPK・プラン・LINEバージョンで変わる場合があります。</p>
+</blockquote>
+<h2>現在の設定項目（6件）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>表示名</th>
+<th>説明</th>
+<th align="center">初期</th>
+<th>利用範囲</th>
+<th>設定キー</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>検索バーを非表示</td>
+<td>チャットリスト上部の検索バーを非表示にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>removeSearchBar</code></td>
+</tr>
+<tr>
+<td>アルバムショートカットを非表示</td>
+<td>チャットリストのヘッダーにあるアルバムショートカットを非表示にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>removeNaviAlbum</code></td>
+</tr>
+<tr>
+<td>オープンチャットショートカットを非表示</td>
+<td>チャットリストのヘッダーにあるオープンチャットショートカットを非表示にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>removeNaviOpenchat</code></td>
+</tr>
+<tr>
+<td>チャットリスト内のAiボタンの削除</td>
+<td>チャットリストのヘッダーにあるAIフレンドショートカットを非表示にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>removeNaviAichat</code></td>
+</tr>
+<tr>
+<td>チャットリスト内でのトークルームを作成ボタンの非表示</td>
+<td>チャットリストにある新規トーク作成ボタンを非表示にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>removeCreateChatButton</code></td>
+</tr>
+<tr>
+<td>「もっと」ボタンを非表示</td>
+<td>チャットリストにある「：」ボタンを非表示にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>removeMoreButton</code></td>
+</tr>
+</tbody></table></div>
+<h2>変更後の確認</h2>
+<ol>
+<li>設定を変更します。</li>
+<li>再起動確認が表示された場合はLINEを再起動します。</li>
+<li>対象画面で動作を確認します。問題があれば直前の設定をOFFに戻します。</li>
+</ol>
+</article>
+  </main>
+  <footer class="wiki-footer">LEINs Japanese User Guide</footer>
+</body>
+</html>

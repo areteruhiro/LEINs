@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LEINsのボタン設定に関する日本語ガイドです。">
+  <meta name="theme-color" content="#06c755">
+  <title>ボタン設定 | LEINs Guide</title>
+  <link rel="icon" href="../assets/leins-icon.png">
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+  <header class="wiki-header">
+    <nav class="wiki-nav" aria-label="Wikiナビゲーション">
+      <a class="wiki-brand" href="../index.html"><img src="../assets/leins-icon.png" alt="" width="34" height="34"><span>LEINs Guide</span></a>
+      <div class="wiki-links">
+        <a href="getting-started.html">はじめ方</a>
+        <a href="settings-ui.html">設定画面</a>
+        <a href="editions.html">プラン</a>
+        <a href="glossary.html">用語集</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wiki-main">
+    <article class="wiki-article"><h1>ボタン設定</h1>
+<p><a href="../index.html">ホームへ戻る</a> / <a href="settings-ui.html">設定画面の使い方</a></p>
+<p>通話ボタン、フォント、LEINs追加ボタンの表示を調整します。</p>
+<blockquote>
+<p>2026年6月21日時点の <code>LEINsOptions.java</code>、日本語リソース、<code>hooks</code> 実装を照合しています。表示項目はAPK・プラン・LINEバージョンで変わる場合があります。</p>
+</blockquote>
+<h2>現在の設定項目（6件）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>表示名</th>
+<th>説明</th>
+<th align="center">初期</th>
+<th>利用範囲</th>
+<th>設定キー</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LINE通話ボタンを非表示</td>
+<td>トーク内の通話メニューからLINE通話ボタンを非表示にします。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>photoboothButtonOption</code></td>
+</tr>
+<tr>
+<td>音声通話ボタンを非表示</td>
+<td>トーク内の通話メニューから音声通話ボタンを非表示にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>voiceButtonOption</code></td>
+</tr>
+<tr>
+<td>ビデオ通話ボタンを非表示（グループ）</td>
+<td>グループトーク内の通話メニューからビデオ通話ボタンを非表示にします。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>videoButtonOption</code></td>
+</tr>
+<tr>
+<td>ビデオ通話ボタンを非表示（個人）</td>
+<td>個人トーク内の通話メニューからビデオ通話ボタンを非表示にします。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>videoSingleButtonOption</code></td>
+</tr>
+<tr>
+<td>アプリ全体を任意のフォントに変更します</td>
+<td>設定したディレクトリに&quot;lein.ttf&quot;ファイルを配置してください。\nフォントのメトリクス（行の高さ）を手動調整する場合は&quot;font.txt&quot;を編集し ascent=- / descent= の形式で編集して下さい</td>
+<td align="center">ON</td>
+<td>Unlock</td>
+<td><code>FontChange</code></td>
+</tr>
+<tr>
+<td>LiffアプリとLINE内Webのフォントを変更します</td>
+<td>設定したディレクトリに&quot;lein.ttf&quot;ファイルを配置してください。\nフォントのメトリクス（行の高さ）を手動調整する場合は&quot;font.txt&quot;を編集し ascent=- / descent= の形式で編集して下さい</td>
+<td align="center">ON</td>
+<td>Unlock</td>
+<td><code>FontChange_Liff_Web</code></td>
+</tr>
+</tbody></table></div>
+<h2>LINE内の詳細設定</h2>
+<p>スイッチとは別に、機能が有効なときだけ表示される設定ボタンがあります。</p>
+<ul>
+<li>LEINsボタンの位置・余白設定</li>
+</ul>
+<h2>変更後の確認</h2>
+<ol>
+<li>設定を変更します。</li>
+<li>再起動確認が表示された場合はLINEを再起動します。</li>
+<li>対象画面で動作を確認します。問題があれば直前の設定をOFFに戻します。</li>
+</ol>
+</article>
+  </main>
+  <footer class="wiki-footer">LEINs Japanese User Guide</footer>
+</body>
+</html>

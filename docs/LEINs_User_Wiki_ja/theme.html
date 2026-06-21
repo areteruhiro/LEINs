@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LEINsのテーマ・外観に関する日本語ガイドです。">
+  <meta name="theme-color" content="#06c755">
+  <title>テーマ・外観 | LEINs Guide</title>
+  <link rel="icon" href="../assets/leins-icon.png">
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+  <header class="wiki-header">
+    <nav class="wiki-nav" aria-label="Wikiナビゲーション">
+      <a class="wiki-brand" href="../index.html"><img src="../assets/leins-icon.png" alt="" width="34" height="34"><span>LEINs Guide</span></a>
+      <div class="wiki-links">
+        <a href="getting-started.html">はじめ方</a>
+        <a href="settings-ui.html">設定画面</a>
+        <a href="editions.html">プラン</a>
+        <a href="glossary.html">用語集</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wiki-main">
+    <article class="wiki-article"><h1>テーマ・外観</h1>
+<p><a href="../index.html">ホームへ戻る</a> / <a href="settings-ui.html">設定画面の使い方</a></p>
+<p>ダーク表示、着せ替え検証、テーマストアの表示を調整します。</p>
+<blockquote>
+<p>2026年6月21日時点の <code>LEINsOptions.java</code>、日本語リソース、<code>hooks</code> 実装を照合しています。表示項目はAPK・プラン・LINEバージョンで変わる場合があります。</p>
+</blockquote>
+<h2>現在の設定項目（7件）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>表示名</th>
+<th>説明</th>
+<th align="center">初期</th>
+<th>利用範囲</th>
+<th>設定キー</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ダークテーマをピュアダークにする</td>
+<td>ナビゲーションボタンを純黒にし、ダークモードの背景を真っ黒（#000000）にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>DarkColor</code></td>
+</tr>
+<tr>
+<td>ダークモードをシステムと同期</td>
+<td>スマホのシステムのダーク/ライトモード設定に合わせて、LINEのダークモードを自動で切り替えます。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>DarkModSync</code></td>
+</tr>
+<tr>
+<td>「ブラック」テーマをピュアダークに変換</td>
+<td>LINEの「ブラック」テーマをピュアブラックに変換します。使用前にLINEの設定で「ダークモードでブラックを適用」をオフにしてください。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>Dark_Theme_Change</code></td>
+</tr>
+<tr>
+<td>ダークテーマに着せ替え</td>
+<td>LINEのダークテーマを強制的に適用します。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>WhiteToDark</code></td>
+</tr>
+<tr>
+<td>テーマ無料化</td>
+<td>&quot;着せ替えの検証を無効&quot;を有効にして下さい。</td>
+<td align="center">OFF</td>
+<td>Basic / Unlock</td>
+<td><code>Theme_free</code></td>
+</tr>
+<tr>
+<td>サブ端末でもテーマストアを表示</td>
+<td>サブ端末ログイン時でも、LINEのテーマストア項目とボタンを表示します。</td>
+<td align="center">OFF</td>
+<td>Basic / Unlock</td>
+<td><code>SecondaryThemeStore</code></td>
+</tr>
+<tr>
+<td>着せ替えの検証を無効</td>
+<td>LINEの内部テーマ検証チェックを再有効化します。通常はカスタムテーマを使うために無効化されています。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>Enable_Theme_Validation</code></td>
+</tr>
+</tbody></table></div>
+<h2>LINE内の詳細設定</h2>
+<p>スイッチとは別に、機能が有効なときだけ表示される設定ボタンがあります。</p>
+<ul>
+<li>LEINsテーマ設定</li>
+<li>フォントファイルの選択・削除</li>
+</ul>
+<h2>変更後の確認</h2>
+<ol>
+<li>設定を変更します。</li>
+<li>再起動確認が表示された場合はLINEを再起動します。</li>
+<li>対象画面で動作を確認します。問題があれば直前の設定をOFFに戻します。</li>
+</ol>
+</article>
+  </main>
+  <footer class="wiki-footer">LEINs Japanese User Guide</footer>
+</body>
+</html>

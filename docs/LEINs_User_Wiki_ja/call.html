@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LEINsの通話・着信音に関する日本語ガイドです。">
+  <meta name="theme-color" content="#06c755">
+  <title>通話・着信音 | LEINs Guide</title>
+  <link rel="icon" href="../assets/leins-icon.png">
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+  <header class="wiki-header">
+    <nav class="wiki-nav" aria-label="Wikiナビゲーション">
+      <a class="wiki-brand" href="../index.html"><img src="../assets/leins-icon.png" alt="" width="34" height="34"><span>LEINs Guide</span></a>
+      <div class="wiki-links">
+        <a href="getting-started.html">はじめ方</a>
+        <a href="settings-ui.html">設定画面</a>
+        <a href="editions.html">プラン</a>
+        <a href="glossary.html">用語集</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wiki-main">
+    <article class="wiki-article"><h1>通話・着信音</h1>
+<p><a href="../index.html">ホームへ戻る</a> / <a href="settings-ui.html">設定画面の使い方</a></p>
+<p>通話画面、入出力音量、着信音・発信音を調整します。</p>
+<blockquote>
+<p>2026年6月21日時点の <code>LEINsOptions.java</code>、日本語リソース、<code>hooks</code> 実装を照合しています。表示項目はAPK・プラン・LINEバージョンで変わる場合があります。</p>
+</blockquote>
+<h2>現在の設定項目（11件）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>表示名</th>
+<th>説明</th>
+<th align="center">初期</th>
+<th>利用範囲</th>
+<th>設定キー</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>通話画面にLINEを開くボタンを追加</td>
+<td>通話画面にLINEアプリを開くボタンを追加します。通話中にチャットを確認したいときに便利です。</td>
+<td align="center">ON</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>CallOpenApplication</code></td>
+</tr>
+<tr>
+<td>SilentCheck</td>
+<td>着信音を鳴らす前にスマホがサイレントモードかどうかを確認し、サイレント中は着信音をスキップします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>SilentCheck</code></td>
+</tr>
+<tr>
+<td>通話中は着信設定を自動で切り替え</td>
+<td>設定→通話→通話の着信許可の有無を通話開始/切断で変更します</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>CallComing</code></td>
+</tr>
+<tr>
+<td>LINE通話の入出力音量をブースト</td>
+<td>LINE通話画面に「音量」ボタンを追加し、入力・出力ブーストを調整します。端末上限を超える増幅はOSとハードウェアに依存します。</td>
+<td align="center">OFF</td>
+<td>Basic / Unlock</td>
+<td><code>CallVolumeBoost</code></td>
+</tr>
+<tr>
+<td>本体の発着信音を鳴らす（非root）</td>
+<td>LINE通話の着信音を、LINEの内蔵音ではなくスマホのデフォルト着信音に変更します。非rootユーザー向けの機能です。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>callTone</code></td>
+</tr>
+<tr>
+<td>LINE着信音をミュート (root)</td>
+<td>LINEの着信音を完全に無音にします。rootユーザー向けの機能です。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>MuteTone</code></td>
+</tr>
+<tr>
+<td>発信音を無効化</td>
+<td>電話をかけているときに鳴るダイアルトーンを無効にします。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>DialTone</code></td>
+</tr>
+<tr>
+<td>(発信音を鳴らす)着信音を利用する</td>
+<td>LINE通話の着信・発信音量として端末の着信音量を使用します。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>ringtonevolume</code></td>
+</tr>
+<tr>
+<td>着信音 停止ボタンを追加</td>
+<td>非rootユーザー向けの着信音再生機能に「停止ボタン」を追加します。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>StopCallTone</code></td>
+</tr>
+<tr>
+<td>通話終了時に効果音を再生(非root要)</td>
+<td>通話終了時に効果音（lineapp_endthis_16k.wav）を再生します。LEINsの設定フォルダにファイルを置いてください。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>CallDisconnectTone</code></td>
+</tr>
+<tr>
+<td>オリジナルの着信音に変更</td>
+<td>LINEの着信音をシステムの着信音ピッカーで選択した音に変更します。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>Original_Tone</code></td>
+</tr>
+</tbody></table></div>
+<h2>変更後の確認</h2>
+<ol>
+<li>設定を変更します。</li>
+<li>再起動確認が表示された場合はLINEを再起動します。</li>
+<li>対象画面で動作を確認します。問題があれば直前の設定をOFFに戻します。</li>
+</ol>
+</article>
+  </main>
+  <footer class="wiki-footer">LEINs Japanese User Guide</footer>
+</body>
+</html>

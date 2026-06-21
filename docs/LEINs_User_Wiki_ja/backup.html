@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LEINsのバックアップ・復元に関する日本語ガイドです。">
+  <meta name="theme-color" content="#06c755">
+  <title>バックアップ・復元 | LEINs Guide</title>
+  <link rel="icon" href="../assets/leins-icon.png">
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+  <header class="wiki-header">
+    <nav class="wiki-nav" aria-label="Wikiナビゲーション">
+      <a class="wiki-brand" href="../index.html"><img src="../assets/leins-icon.png" alt="" width="34" height="34"><span>LEINs Guide</span></a>
+      <div class="wiki-links">
+        <a href="getting-started.html">はじめ方</a>
+        <a href="settings-ui.html">設定画面</a>
+        <a href="editions.html">プラン</a>
+        <a href="glossary.html">用語集</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wiki-main">
+    <article class="wiki-article"><h1>バックアップ・復元</h1>
+<p><a href="../index.html">ホームへ戻る</a> / <a href="settings-ui.html">設定画面の使い方</a></p>
+<p>トーク履歴と関連データのバックアップ・復元を扱います。実行前に保存先を確認してください。</p>
+<blockquote>
+<p>2026年6月21日時点の <code>LEINsOptions.java</code>、日本語リソース、<code>hooks</code> 実装を照合しています。表示項目はAPK・プラン・LINEバージョンで変わる場合があります。</p>
+</blockquote>
+<h2>現在の設定項目（3件）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>表示名</th>
+<th>説明</th>
+<th align="center">初期</th>
+<th>利用範囲</th>
+<th>設定キー</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>トーク履歴のバックアップ・復元</td>
+<td>rootなしでLINEのトーク履歴をバックアップ・復元できます。初回は LINE 内で初期設定が必要です。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>TalkBackUpRestore</code></td>
+</tr>
+<tr>
+<td>LEINsバックアップを上書きから保護</td>
+<td>LINEの公式クラウドバックアップがLEINsのバックアップを上書きしないよう保護します。</td>
+<td align="center">OFF</td>
+<td>Trial / Basic / Unlock</td>
+<td><code>TalkBackUpCloud_Disableoverride</code></td>
+</tr>
+<tr>
+<td>GMS Coreを利用してトークのバックアップ、復元を行います</td>
+<td>この機能は試験的なため15.12.2のみを対象にしています。  LINEにGMS coreのパッチを当てる必要があります。  Micro G REの「アプリによるアカウントの検出を許可」を有効にしてください。  この機能でのトークのバックアップ/復元はLINE公式のデータに対して復元することを目的にしています</td>
+<td align="center">OFF</td>
+<td>Basic / Unlock</td>
+<td><code>Revanced_LINE_Talk_BackUP_Restore</code></td>
+</tr>
+</tbody></table></div>
+<h2>LINE内の詳細設定</h2>
+<p>スイッチとは別に、機能が有効なときだけ表示される設定ボタンがあります。</p>
+<ul>
+<li>トーク履歴・チャットリスト・messageテーブル・画像フォルダのバックアップと復元</li>
+<li>MIDの確認</li>
+</ul>
+<h2>変更後の確認</h2>
+<ol>
+<li>設定を変更します。</li>
+<li>再起動確認が表示された場合はLINEを再起動します。</li>
+<li>対象画面で動作を確認します。問題があれば直前の設定をOFFに戻します。</li>
+</ol>
+</article>
+  </main>
+  <footer class="wiki-footer">LEINs Japanese User Guide</footer>
+</body>
+</html>
