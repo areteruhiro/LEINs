@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LEINsの使い方、設定画面、UIスタイル、機能カテゴリ、プラン差分をまとめた日本語ユーザーガイドです。">
+  <meta name="theme-color" content="#06c755">
+  <title>LEINs 使い方ガイド</title>
+  <link rel="icon" href="assets/leins-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a class="brand" href="#top" aria-label="LEINs 使い方ガイドの先頭へ">
+        <img src="assets/leins-icon.png" alt="" width="40" height="40">
+        <span>LEINs Guide</span>
+      </a>
+      <div class="nav-links">
+        <a href="#start">はじめ方</a>
+        <a href="#ui-styles">UI再現</a>
+        <a href="#line-embedded">LINE内画面</a>
+        <a href="#categories">機能</a>
+        <a href="#support">サポート</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">LINEを使いやすく整える拡張モジュール</p>
+          <h1 id="hero-title">LEINs 使い方ガイド</h1>
+          <p class="lead">初めての人でも迷わないように、導入後に見る場所、設定画面の開き方、UIスタイル、機能カテゴリをまとめています。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="LEINs_User_Wiki_ja/getting-started.md">はじめてのLEINs</a>
+            <a class="button secondary" href="LEINs_User_Wiki_ja/settings-ui.md">設定画面の使い方</a>
+            <a class="button secondary" href="https://github.com/areteruhiro/LEINs">GitHub</a>
+          </div>
+        </div>
+        <div class="phone-frame hero-shot" aria-label="LEINs設定画面のスクリーンショット">
+          <img src="assets/screenshots/leins-main.png" alt="LEINs設定画面。設定フォルダ、アイコンソース、検索欄、カテゴリが表示されています。">
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Start</p>
+        <h2>最初に見るところ</h2>
+      </div>
+      <div class="steps">
+        <article>
+          <span>1</span>
+          <h3>導入方式を確認する</h3>
+          <p>ROOT版またはLsPatch版のどちらで使うかを確認します。使っているAPKや環境によって、表示される機能が変わることがあります。</p>
+          <a href="https://github.com/areteruhiro/LEINs/blob/main/README%20for%20root.md">ROOT版</a>
+          <a href="https://github.com/areteruhiro/LEINs/blob/main/README%20for%20LsPatch.md">LsPatch版</a>
+        </article>
+        <article>
+          <span>2</span>
+          <h3>LEINs設定を開く</h3>
+          <p>LINEの設定内に追加されるLEINsボタンから設定画面を開きます。初回は設定フォルダの接続を求められます。</p>
+          <a href="LEINs_User_Wiki_ja/settings-ui.md">設定画面の使い方</a>
+        </article>
+        <article>
+          <span>3</span>
+          <h3>カテゴリから機能を探す</h3>
+          <p>広告、既読、通知、通話、バックアップなど、目的に近いカテゴリから設定を確認します。名前が分からない時は検索欄を使います。</p>
+          <a href="#categories">機能カテゴリへ</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="ui-styles" class="section ui-section" aria-labelledby="ui-title">
+      <div class="section-heading">
+        <p class="eyebrow">Code Recreated UI</p>
+        <h2 id="ui-title">コードから再現した3つの設定画面</h2>
+        <p class="section-lead"><code>LIME-beta-hiro</code> の <code>MainActivity.java</code>、<code>MainActivityMiuix.kt</code>、<code>MainActivityExpressive.kt</code> をもとに、実機スクリーンショットなしでUI構造を再現しています。</p>
+      </div>
+
+      <div class="style-tabs" role="tablist" aria-label="UIスタイル切り替え">
+        <button class="style-tab is-active" type="button" data-style-tab="standard">Android標準</button>
+        <button class="style-tab" type="button" data-style-tab="miui">MIUI</button>
+        <button class="style-tab" type="button" data-style-tab="expressive">Material 3 Expressive</button>
+      </div>
+
+      <div class="ui-showcase">
+        <article class="mock-card" data-style-panel="standard">
+          <div class="mock-meta">
+            <h3>Android標準</h3>
+            <p>手書きAndroid View。濃い背景、緑アクセント、カテゴリカード、検索欄、標準Switchを中心にした構成です。</p>
+          </div>
+          <div class="android-device standard-device">
+            <div class="device-bar"><span></span><strong>LEINs</strong><span></span></div>
+            <div class="standard-screen">
+              <header class="standard-header">
+                <div>
+                  <p>対象LINEアプリ</p>
+                  <strong>jp.naver.line.android</strong>
+                </div>
+                <button>再起動</button>
+              </header>
+              <section class="std-card">
+                <p class="std-status">設定フォルダが接続されています</p>
+                <button class="std-primary">設定フォルダを変更・接続</button>
+                <button class="std-ghost">接続解除</button>
+              </section>
+              <section class="std-card">
+                <h4>UIスタイル</h4>
+                <div class="choice-row">
+                  <button class="is-selected">Android標準</button>
+                  <button>MIUI</button>
+                  <button>Material 3</button>
+                </div>
+              </section>
+              <label class="std-search">検索 <input value="既読" aria-label="検索欄"></label>
+              <section class="std-category">
+                <div class="cat-head"><strong>プライバシー・既読</strong><span>15件</span></div>
+                <div class="switch-row"><span>既読確認</span><i></i></div>
+                <div class="switch-row"><span>既読送信を相手別に設定</span><i class="off"></i></div>
+              </section>
+              <section class="std-category compact">
+                <div class="cat-head"><strong>通知</strong><span>15件</span></div>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="mock-card" data-style-panel="miui">
+          <div class="mock-meta">
+            <h3>MIUI</h3>
+            <p><code>MiuixTheme</code>、<code>Card</code>、<code>BasicComponent</code>、<code>FloatingNavigationBar</code> の余白と丸みを反映した画面です。</p>
+          </div>
+          <div class="android-device miui-device">
+            <div class="miui-screen">
+              <header class="miui-title">
+                <strong>LEINs</strong>
+                <span>Overview</span>
+              </header>
+              <section class="miui-dashboard">
+                <div><small>有効</small><strong>42</strong></div>
+                <div><small>項目</small><strong>116</strong></div>
+                <div><small>カテゴリ</small><strong>13</strong></div>
+              </section>
+              <section class="miui-card">
+                <div class="miui-row"><span class="miui-icon">F</span><div><strong>設定フォルダ</strong><p>接続済み</p></div><b>OK</b></div>
+                <button>設定ディレクトリを設定</button>
+              </section>
+              <section class="miui-card">
+                <div class="miui-row"><span class="miui-icon tune">T</span><div><strong>UIスタイル</strong><p>miuix部品とMIUIらしい余白</p></div></div>
+                <div class="miui-choice"><span>Android標準</span></div>
+                <div class="miui-choice active"><span>MIUI</span><b>✓</b></div>
+                <div class="miui-choice"><span>Material 3 Expressive</span></div>
+              </section>
+              <div class="miui-search">検索</div>
+              <nav class="miui-nav"><b>概要</b><span>機能</span><span>ツール</span><span>支援</span></nav>
+            </div>
+          </div>
+        </article>
+
+        <article class="mock-card" data-style-panel="expressive">
+          <div class="mock-meta">
+            <h3>Material 3 Expressive</h3>
+            <p>アウトラインカード、トーナル操作、メトリックレール、横型フローティングツールバーを再現しています。</p>
+          </div>
+          <div class="android-device expressive-device">
+            <div class="expressive-screen">
+              <section class="exp-hero">
+                <span>LEINs</span>
+                <strong>LINEの表示と通知を調整</strong>
+                <p>設定フォルダ、UIスタイル、機能カテゴリを一か所で管理します。</p>
+              </section>
+              <section class="exp-metrics">
+                <div><small>Enabled</small><b>42</b></div>
+                <div><small>Options</small><b>116</b></div>
+                <div><small>Groups</small><b>13</b></div>
+              </section>
+              <section class="exp-card">
+                <h4>UIスタイル</h4>
+                <p>Dialogs and settings renderer</p>
+                <div class="exp-toggle"><button>Android</button><button>MIUI</button><button class="active">M3 Expressive</button></div>
+              </section>
+              <label class="exp-field">検索 <input placeholder="通知、広告、既読"></label>
+              <section class="exp-card feature">
+                <div><strong>通知</strong><p>画像追加、ミュート、既読ボタン</p></div>
+                <i></i>
+              </section>
+              <nav class="exp-toolbar"><b>概要</b><span>機能</span><span>ツール</span><span>支援</span></nav>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="line-embedded" class="section embedded-section" aria-labelledby="embedded-title">
+      <div class="section-heading">
+        <p class="eyebrow">EmbedOptions.java</p>
+        <h2 id="embedded-title">LINE内に追加されるLEINs画面</h2>
+        <p class="section-lead"><code>EmbedOptions.java</code> と埋め込みUIレンダラーをもとに、LINE内で設定を開く流れを4画面で再現しました。個人のトーク内容を使わないコード再現画像です。</p>
+      </div>
+
+      <div class="embed-flow" aria-label="LINE内でLEINs設定を開く流れ">
+        <article class="embed-step">
+          <div class="embed-step-copy"><span>1</span><div><h3>歯車から開く</h3><p>Keepボタンの左にLEINs設定ボタンが追加されます。</p></div></div>
+          <div class="line-device">
+            <div class="line-status"><b>9:41</b><span>● ● ●</span></div>
+            <header class="line-header"><strong>トーク</strong><div class="line-actions"><button aria-label="検索">⌕</button><button class="leins-gear" aria-label="LEINs設定">⚙</button><button aria-label="Keep">▣</button></div></header>
+            <div class="line-search">⌕　検索</div>
+            <div class="line-list">
+              <div><i class="avatar green">L</i><p><strong>LINE</strong><small>新しいお知らせがあります</small></p><time>9:32</time></div>
+              <div><i class="avatar blue">A</i><p><strong>サンプルトーク</strong><small>表示確認用の内容です</small></p><time>昨日</time></div>
+              <div><i class="avatar gray">G</i><p><strong>グループ</strong><small>コード再現プレビュー</small></p><time>金</time></div>
+            </div>
+            <nav class="line-bottom"><span>ホーム</span><b>トーク</b><span>VOOM</span><span>ニュース</span><span>ウォレット</span></nav>
+          </div>
+        </article>
+
+        <article class="embed-step">
+          <div class="embed-step-copy"><span>2</span><div><h3>Labsから開く</h3><p>補助入口としてLabs画面の右上にもLEINsが表示されます。</p></div></div>
+          <div class="line-device labs-device">
+            <div class="line-status"><b>9:41</b><span>● ● ●</span></div>
+            <header class="settings-header"><button aria-label="戻る">‹</button><strong>Labs</strong><button class="labs-leins">LEINs</button></header>
+            <p class="settings-note">リリース前の新機能を試すことができます。</p>
+            <section class="line-settings-group">
+              <div><p><strong>新しいトークフォルダー</strong><small>トークを種類ごとに整理します</small></p><i class="line-switch on"></i></div>
+              <div><p><strong>メディア表示の改善</strong><small>新しい表示方法を使用します</small></p><i class="line-switch"></i></div>
+              <div><p><strong>リンクプレビュー</strong><small>新しいプレビューを試します</small></p><i class="line-switch on"></i></div>
+            </section>
+          </div>
+        </article>
+
+        <article class="embed-step">
+          <div class="embed-step-copy"><span>3</span><div><h3>カテゴリを選ぶ</h3><p>開くとLINEの内容が一時退避され、LEINsのカテゴリ一覧に切り替わります。</p></div></div>
+          <div class="line-device leins-embed-device">
+            <div class="line-status dark"><b>9:41</b><span>● ● ●</span></div>
+            <header class="embed-header"><button aria-label="閉じる">‹</button><div><strong>LEINs</strong><small>LINE内設定</small></div><b class="plan-badge">Basic</b></header>
+            <div class="embed-summary"><div><small>有効</small><b>42</b></div><div><small>設定</small><b>116</b></div><div><small>カテゴリ</small><b>14</b></div></div>
+            <div class="embed-search">⌕　設定を検索</div>
+            <div class="embed-categories">
+              <button><i class="cat-icon layout">▦</i><span><strong>レイアウト・UI</strong><small>7項目</small></span><b>›</b></button>
+              <button><i class="cat-icon privacy">◉</i><span><strong>プライバシー・既読</strong><small>15項目・5有効</small></span><b>›</b></button>
+              <button><i class="cat-icon chat">▤</i><span><strong>チャット・メッセージ</strong><small>24項目</small></span><b>›</b></button>
+              <button><i class="cat-icon notify">♢</i><span><strong>通知</strong><small>15項目</small></span><b>›</b></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="embed-step">
+          <div class="embed-step-copy"><span>4</span><div><h3>機能を切り替える</h3><p>カテゴリ内では説明を読みながら各機能をオン・オフできます。</p></div></div>
+          <div class="line-device leins-embed-device options-device">
+            <div class="line-status dark"><b>9:41</b><span>● ● ●</span></div>
+            <header class="embed-header"><button aria-label="カテゴリへ戻る">‹</button><div><strong>プライバシー・既読</strong><small>15項目</small></div><span></span></header>
+            <p class="option-section-title">既読管理</p>
+            <section class="embed-options">
+              <div><p><strong>メッセージを常に未読のままにする</strong><small>メッセージを開いても既読を送信しません。</small></p><i class="line-switch on"></i></div>
+              <div><p><strong>既読を付ける相手の編集</strong><small>相手ごとに既読送信を設定します。</small></p><i class="line-switch"></i></div>
+              <div><p><strong>チャットを開くと未読バッジを消す</strong><small>端末側の未読表示だけを消します。</small></p><i class="line-switch on"></i></div>
+              <div><p><strong>クイック切替を追加</strong><small>トーク一覧のメニューから切り替えます。</small></p><i class="line-switch"></i></div>
+            </section>
+            <p class="option-section-title second">既読チェッカー</p>
+            <section class="embed-options compact-option"><div><p><strong>送信したメッセージの既読者確認</strong></p><i class="line-switch on"></i></div></section>
+          </div>
+        </article>
+      </div>
+      <p class="source-note">再現元: <code>EmbedOptions.java</code>、<code>LeinsEmbedOptionsView.kt</code>、<code>MiuixEmbedOptionsView.kt</code>、<code>ExpressiveEmbedOptionsView.kt</code>、<code>LEINsOptions.java</code></p>
+    </section>
+
+    <section class="section screenshots" aria-labelledby="screenshots-title">
+      <div class="section-heading">
+        <p class="eyebrow">Screenshots</p>
+        <h2 id="screenshots-title">実機で確認したLEINs画面</h2>
+      </div>
+      <div class="screenshot-grid">
+        <figure>
+          <div class="phone-frame">
+            <img src="assets/screenshots/leins-main.png" alt="LEINs設定画面の上部。設定フォルダ接続、アイコンソース、検索欄が表示されています。">
+          </div>
+          <figcaption>設定画面の入口。検索欄から機能名を探せます。</figcaption>
+        </figure>
+        <figure>
+          <div class="phone-frame">
+            <img src="assets/screenshots/leins-categories.png" alt="LEINs設定画面のカテゴリ一覧。ホーム画面、チャットリスト、ブラウザ、テーマ、広告などが並んでいます。">
+          </div>
+          <figcaption>カテゴリ一覧。目的に近い項目から開きます。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="categories" class="section">
+      <div class="section-heading with-search">
+        <div>
+          <p class="eyebrow">Features</p>
+          <h2>機能カテゴリ</h2>
+        </div>
+        <label class="search">
+          <span>検索</span>
+          <input id="category-search" type="search" placeholder="既読、通知、広告..." autocomplete="off">
+        </label>
+      </div>
+      <div class="category-grid" id="category-grid">
+        <a class="category-card" href="LEINs_User_Wiki_ja/layout.md" data-keywords="layout ui 画面 レイアウト ミニアプリ タブ"><strong>画面レイアウト・UI</strong><span>9件</span><p>タブやヘッダー、画面内の表示項目を整理します。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/home.md" data-keywords="home ホーム サービス ミニアプリ ショッピング"><strong>ホーム画面</strong><span>5件</span><p>ホームのサービス項目やコマース表示を調整します。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/chat_list.md" data-keywords="chat list チャットリスト 未読"><strong>チャットリスト</strong><span>7件</span><p>チャット一覧の表示、未読、並びに関わる項目です。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/browser.md" data-keywords="browser link ブラウザ リンク webview"><strong>ブラウザ・リンク</strong><span>3件</span><p>リンクを外部ブラウザで開く設定を確認できます。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/theme.md" data-keywords="theme dark テーマ ダーク 外観"><strong>テーマ・外観</strong><span>5件</span><p>ダークテーマ、フォント、見た目の調整です。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/buttons.md" data-keywords="buttons ボタン 位置 既読"><strong>ボタン設定</strong><span>6件</span><p>LEINsボタンや補助ボタンの位置を調整します。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/ad.md" data-keywords="ad 広告 おすすめ gcs lyp"><strong>広告</strong><span>3件</span><p>広告やおすすめ表示の削除に関する項目です。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/privacy.md" data-keywords="privacy read 既読 プライバシー ブロック"><strong>プライバシー・既読</strong><span>15件</span><p>既読防止、確認履歴、ブロック監視などをまとめています。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/chat.md" data-keywords="chat message チャット メッセージ 送信取消"><strong>チャット・メッセージ</strong><span>24件</span><p>送信取消保護、保存、検索、メッセージ操作の項目です。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/notifications.md" data-keywords="notification 通知 ミュート リアクション"><strong>通知</strong><span>15件</span><p>通知ミュート、画像追加、リアクション通知を調整します。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/call.md" data-keywords="call 通話 着信音 発信音"><strong>通話・着信音</strong><span>10件</span><p>通話ボタン、着信音、発信音まわりの設定です。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/backup.md" data-keywords="backup restore バックアップ 復元 トーク"><strong>バックアップ・復元</strong><span>4件</span><p>トーク履歴や画像フォルダのバックアップを確認します。</p></a>
+        <a class="category-card" href="LEINs_User_Wiki_ja/other.md" data-keywords="advanced other 上級者 通信 token fcm"><strong>上級者向け</strong><span>14件</span><p>通信改変、トークン、解析向け項目をまとめています。</p></a>
+      </div>
+      <p class="empty" id="empty-message" hidden>一致するカテゴリがありません。</p>
+    </section>
+
+    <section id="support" class="section support">
+      <div>
+        <p class="eyebrow">Support</p>
+        <h2>困ったとき</h2>
+        <p>動かない、項目の意味が分からない、バグを見つけた場合は、Wikiで確認してからサポート先に報告してください。</p>
+      </div>
+      <div class="support-links">
+        <a href="LEINs_User_Wiki_ja/README.md">Wiki入口</a>
+        <a href="LEINs_User_Wiki_ja/glossary.md">用語集</a>
+        <a href="LEINs_User_Wiki_ja/unknowns.md">確認が必要な機能</a>
+        <a href="https://t.me/LsPosedLEINs">Telegram</a>
+        <a href="https://discord.gg/5WWxUkMsNJ">Discord</a>
+        <a href="https://github.com/areteruhiro/LEINs/issues">GitHub Issues</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>LEINs user guide for GitHub Pages.</p>
+    <a href="https://github.com/areteruhiro/LEINs">areteruhiro/LEINs</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
