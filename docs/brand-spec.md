@@ -33,4 +33,4 @@ This GitHub Pages guide uses real project and device assets.
 - Explain features for first-time users before showing internal keys.
 - Keep warning language calm and practical.
 - Avoid implying affiliation with LINE or any related service.
-- Do not invent unsupported claims; uncertain features stay in `LEINs_User_Wiki_ja/unknowns.md`.
+- Do not invent unsupported claims; omit uncertain feature claims until they are verified.

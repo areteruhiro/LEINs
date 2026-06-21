@@ -1,6 +1,6 @@
 # はじめてのLEINs
 
-[入口へ戻る](README.md) / [設定画面の使い方](settings-ui.md) / [用語集](glossary.md)
+[ホームへ戻る](../index.html) / [設定画面の使い方](settings-ui.md) / [用語集](glossary.md)
 
 このページは、LEINsを初めて使う人向けの最短ガイドです。細かい機能を探す前に、全体の流れだけ確認してください。
 

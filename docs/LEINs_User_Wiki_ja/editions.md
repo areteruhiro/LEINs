@@ -1,6 +1,6 @@
 # LEINs の版とプラン比較
 
-[入口へ戻る](README.md) / [はじめてのLEINs](getting-started.md) / [設定画面の使い方](settings-ui.md)
+[ホームへ戻る](../index.html) / [はじめてのLEINs](getting-started.md) / [設定画面の使い方](settings-ui.md)
 
 このページでは、最低限の機能を使える **Trial版** と、有料プランとして扱う **Basic版** / **Unlock版** の違いを説明します。
 

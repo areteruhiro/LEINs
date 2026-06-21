@@ -1,6 +1,6 @@
 # 用語集
 
-[入口へ戻る](README.md) / [はじめてのLEINs](getting-started.md)
+[ホームへ戻る](../index.html) / [はじめてのLEINs](getting-started.md)
 
 LEINsの説明でよく出る言葉を、初めての人向けにまとめます。
 

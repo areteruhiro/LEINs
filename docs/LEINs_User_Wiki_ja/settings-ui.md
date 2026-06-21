@@ -1,6 +1,6 @@
 # 設定画面の使い方
 
-[入口へ戻る](README.md) / [はじめてのLEINs](getting-started.md) / [用語集](glossary.md)
+[ホームへ戻る](../index.html) / [はじめてのLEINs](getting-started.md) / [用語集](glossary.md)
 
 このページでは、LEINsの設定画面をどう開き、どのようにON/OFFするかを説明します。機能名の意味を知りたい場合は、各カテゴリページもあわせて見てください。
 

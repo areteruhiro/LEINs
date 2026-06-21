@@ -2,12 +2,11 @@
 
 このWikiはページ分割版へ移行しました。設定画面で表示される項目を中心に、ユーザーが実際に確認しやすい形で使い方と対象プランを整理しています。不明な機能は推測せず `要確認` としています。
 
-- [入口ページ](LEINs_User_Wiki_ja/README.md)
+- [ホームページ](index.html)
 - [はじめてのLEINs](LEINs_User_Wiki_ja/getting-started.md)
 - [LEINs の版とプラン比較](LEINs_User_Wiki_ja/editions.md)
 - [設定画面の使い方](LEINs_User_Wiki_ja/settings-ui.md)
 - [用語集](LEINs_User_Wiki_ja/glossary.md)
-- [確認が必要な機能](LEINs_User_Wiki_ja/unknowns.md)
 
 ## カテゴリ別ページ
 - [画面レイアウト・UI](LEINs_User_Wiki_ja/layout.md): 9 件
