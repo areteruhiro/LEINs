@@ -1,5 +1,11 @@
 
 
+## 6.14.3
+
+Use premerged LINE APK assets in workflow
+
+
+
 ## 6.14.1
 
 - Trial 
