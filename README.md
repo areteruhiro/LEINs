@@ -24,6 +24,7 @@ areteruhiro@gmail.com
 ---
 
 ## 🔗 コミュニティ / 最新情報
+- Web: https://areteruhiro.github.io/LEINs/index.html
 - Telegram: https://t.me/+LacdVUvvKJdjZmY1  
 - Discord: https://discord.gg/5WWxUkMsNJ  
 
