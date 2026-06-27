@@ -3,6 +3,7 @@
 このWikiはページ分割版へ移行しました。設定画面で表示される項目を中心に、ユーザーが実際に確認しやすい形で使い方と対象プランを整理しています。不明な機能は推測せず `要確認` としています。
 
 - [はじめてのLEINs](ja/getting-started.md)
+- [LEINs の使い方・導入方法](ja/usage.md)
 - [LEINs の版とプラン比較](ja/editions.md)
 - [設定画面の使い方](ja/settings-ui.md)
 - [用語集](ja/glossary.md)
