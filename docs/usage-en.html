@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="How to set up LEINs with NPatch or LSPatch.">
+  <meta name="theme-color" content="#06c755">
+  <title>Setup and Usage | LEINs Guide</title>
+  <link rel="canonical" href="https://areteruhiro.github.io/LEINs/usage-en.html">
+  <link rel="alternate" hreflang="ja" href="https://areteruhiro.github.io/LEINs/usage.html">
+  <link rel="alternate" hreflang="en" href="https://areteruhiro.github.io/LEINs/usage-en.html">
+  <link rel="alternate" hreflang="zh-Hant-TW" href="https://areteruhiro.github.io/LEINs/usage-zh-tw.html">
+  <link rel="alternate" hreflang="x-default" href="https://areteruhiro.github.io/LEINs/usage.html">
+  <link rel="icon" href="assets/leins-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="consumer.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="assets/leins-icon.png" alt="" width="40" height="40"><span>LEINs Guide</span></a>
+      <div class="nav-links"><a href="usage-en.html" aria-current="page">How to use</a><a href="index.html#purchase">Purchase</a><a href="index.html#categories">Features</a><a href="index.html#support">Support</a></div>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="usage-hero">
+      <div>
+        <nav class="language-switcher" aria-label="Language"><a href="usage.html" lang="ja">日本語</a><a href="usage-en.html" aria-current="page">English</a><a href="usage-zh-tw.html" lang="zh-Hant-TW">繁體中文</a></nav>
+        <p class="eyebrow">Setup guide</p>
+        <h1>How to use</h1>
+        <p class="lead">We recommend using one of the locally patched builds listed here with LEINs. Follow these steps in order to get started.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Step 1</p>
+        <h2>Install a patching app</h2>
+        <p class="section-lead">First, install either NPatch or LSPatch.</p>
+      </div>
+      <div class="download-grid">
+        <a class="download-card" href="https://drive.google.com/drive/folders/1tyi-4HomkELjDsHFHjKuXF5QOsSQuNhn?usp=drive_link">
+          <span>Recommended</span>
+          <strong>NPatch</strong>
+          <small>Open in Google Drive</small>
+        </a>
+        <a class="download-card" href="https://github.com/JingMatrix/LSPatch/releases/">
+          <span>Another option</span>
+          <strong>LSPatch</strong>
+          <small>Open GitHub Releases</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="section tinted">
+      <div class="section-heading">
+        <p class="eyebrow">Step 2</p>
+        <h2>Download LINE for your system ABI</h2>
+        <p class="section-lead">Open the patching app and tap “HOME.” Download the app whose ABI matches the “System ABI” shown there.</p>
+      </div>
+      <div class="download-grid">
+        <a class="download-card" href="https://drive.google.com/drive/folders/1kHUdu7tEM-6gsowKhxo9b8e4ULrwQ7yF?usp=sharing">
+          <span>Download</span>
+          <strong>Google Drive</strong>
+          <small>Open the patched LINE builds</small>
+        </a>
+        <a class="download-card" href="https://mega.nz/folder/TIkWTb5T#TPSj7x00vy4L-hqayxc7AQ">
+          <span>Download</span>
+          <strong>MEGA</strong>
+          <small>Open the patched LINE builds</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Step 3</p>
+        <h2>Back up your current LINE data</h2>
+      </div>
+      <div class="notice-card">
+        <strong>If you use LINE without changing its package name</strong>
+        <p>The downloaded app has a different signature from the existing LINE app, so it cannot be installed as an update. Back up your chats and other important data first, uninstall the existing LINE app, and then install the downloaded app.</p>
+      </div>
+    </section>
+
+    <section class="section login-flow">
+      <div class="section-heading">
+        <p class="eyebrow">Step 4</p>
+        <h2>Do not select a scope at first</h2>
+        <p class="section-lead">For a new installation, follow these steps in order.</p>
+      </div>
+      <ol class="usage-steps">
+        <li><span>1</span><div><strong>Start without selecting a scope</strong><p>Launch LINE without selecting a scope.</p></div></li>
+        <li><span>2</span><div><strong>Sign in to LINE</strong><p>Sign in normally and confirm that LINE works.</p></div></li>
+        <li><span>3</span><div><strong>Select LEINs in the scope</strong><p>After confirming that you can sign in, select “LEINs” in the scope.</p></div></li>
+      </ol>
+      <aside class="friendly-note">Do not select a scope before confirming that you can sign in.</aside>
+      <aside class="friendly-note">When using a local patch, you only need to update LEINs. However, the scope may occasionally be cleared. If LEINs does not work after an update, check the scope setting.</aside>
+    </section>
+  </main>
+  <footer><p>LEINs Usage Guide</p><a href="index.html">Back to home</a></footer>
+</body>
+</html>
