@@ -53,7 +53,8 @@ https://github.com/areteruhiro/LEINs/blob/main/FunctionLIST.md
 継続的な開発のため、ご支援いただけると大変助かります。
 
 - PayPay: https://qr.paypay.ne.jp/p2p01_oDVfRTzTKrCLCXmn  
-- GitHub Sponsors: https://github.com/sponsors/areteruhiro  
+- GitHub Sponsors: https://github.com/sponsors/areteruhiro
+* [Amazon Gift Card](https://www.amazon.co.jp/gp/product/B004N3APGO) Send to (areteruhiro@gmail.com)<br>  
 
 ---
 
