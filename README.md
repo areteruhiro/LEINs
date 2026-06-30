@@ -9,17 +9,8 @@ LEINs は、LINE アプリ体験を向上させるための
 ---
 > 本プロジェクトは独立した開発によるものであり、特定のサービスとは関係ありません。
 
-このLEINについてですが、
-記事等への使い方等の記載はお控えいただけるようお願いいたします。 
-
-（いわゆる、拡散を主と置いたものは控えていただけると幸いです）
-
-→本来このようなモジュールは、LINEが推奨しているものではなく、詳しくない方にも知られるような事は、ふさわしくないと私は考えていますし、トラブルの源でもあると思います。
-
 なにかご質問等がございましたら、個人チャット又は以下へご連絡いただければ幸いです。
 areteruhiro@gmail.com
-
-
 
 ---
 
@@ -53,7 +44,8 @@ https://github.com/areteruhiro/LEINs/blob/main/FunctionLIST.md
 継続的な開発のため、ご支援いただけると大変助かります。
 
 - PayPay: https://qr.paypay.ne.jp/p2p01_oDVfRTzTKrCLCXmn  
-- GitHub Sponsors: https://github.com/sponsors/areteruhiro  
+- GitHub Sponsors: https://github.com/sponsors/areteruhiro
+* [Amazon Gift Card](https://www.amazon.co.jp/gp/product/B004N3APGO) Send to (areteruhiro@gmail.com)<br>  
 
 ---
 
