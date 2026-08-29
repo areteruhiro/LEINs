@@ -923,6 +923,10 @@ h3 {
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
 
+.category-card[hidden] {
+  display: none;
+}
+
 .category-card:hover {
   border-color: rgba(6, 199, 85, 0.62);
   box-shadow: 0 12px 28px rgba(15, 40, 27, 0.10);
