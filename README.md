@@ -23,7 +23,7 @@ areteruhiro@gmail.com
 
 ## 🚀 導入方法
 - [ROOT版の導入方法](https://github.com/areteruhiro/LEINs/blob/master/README%20for%20root.md)  
-- [LsPatch版の導入方法](https://github.com/areteruhiro/LEINs/blob/master/README%20for%20LsPatch.md)  
+- [LsPatch版の導入方法](https://github.com/areteruhiro/LEINs/blob/main/README%20for%20LsPatch.md)  
 
 ---
 
