@@ -1,5 +1,12 @@
 #  LEINs
 
+## 購入方法
+
+有料プランの新規購入は一括購入のみです。
+
+- [買い切り（1,300円）](https://buy.stripe.com/3cI6oH7sE0Or2Riepd08g07)
+- [買い切り・追加操作不要（1,400円）](https://buy.polar.sh/polar_cl_dFEUHBTUWG7cmzursPZfrmJ68sf47HFVK1VT334IhCQ)
+
 ## 概要
 **「LINEをあなたの使い方に合わせて」** <br>
 このモジュールはLINEをカスタマイズするXposedモジュールです。
